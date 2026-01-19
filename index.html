@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FroglyStudios — Apps & Side Projects</title>
+  <meta name="description" content="FroglyStudios is a small developer studio by ImNotMFP. I build minimal, fast apps and experiments — starting with YourFocus (free)." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://yourfocus.com/" />
+
+  <!-- Favicon (logo.png) -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FroglyStudios" />
+  <meta property="og:description" content="Minimal, fast apps and side projects — starting with YourFocus (free)." />
+  <meta property="og:url" content="https://yourfocus.com/" />
+  <meta property="og:image" content="https://yourfocus.com/assets/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#0b0b0f" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD (Person/Brand) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Frogly Studios",
+    "alternateName": "FroglyStudios",
+    "url": "https://yourfocus.com/",
+    "sameAs": [
+      "https://discord.gg/3DZfVWExDD",
+      "https://store.steampowered.com/app/4037900/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="FroglyStudios Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">FroglyStudios</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#legal">Legal</a>
+      </nav>
+
+      <a class="btn" href="https://discord.gg/3DZfVWExDD" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card hero-card">
+        <div class="kicker"><span class="dot"></span> Software • Games</div>
+
+        <h1>FroglyStudios</h1>
+        <p class="sub">
+          I’m <b>Max</b>. I build small apps, games and web projects. From Gamers for Gamers.
+          This will soon be replaced with something bigger.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="#work">See what I built</a>
+          <a class="btn secondary" href="mailto:froglystudios@gmail.com">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>Short and to the point.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card pad">
+          <h3>Who I am</h3>
+          <p class="muted">
+            I publish side projects under <b>FroglyStudios</b>. I like clean UI, fast performance,
+            and shipping things that feel “finished”. My first project is <a href="/yourfocus/">YourFocus</a>, a free focus companion. More to come. Stay tuned! 🙂
+          </p>
+        </div>
+
+        <div class="card pad">
+          <h3>Links</h3>
+          <div class="link-list">
+            <a class="link-item" href="https://discord.gg/3DZfVWExDD" target="_blank" rel="noopener">Discord</a>
+            <a class="link-item" href="mailto:froglystudios@gmail.com">Email</a>
+            <a class="link-item" href="/yourfocus/">YourFocus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>One project live — more coming.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- YOURFOCUS CARD -->
+        <article class="card project">
+          <div class="project-head">
+            <h3>YourFocus</h3>
+            <span class="badge">Free</span>
+          </div>
+
+          <div class="embed">
+            <iframe
+              class="steam-frame"
+              title="Steam Store Widget — YourFocus"
+              src="https://store.steampowered.com/widget/4037900/"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+
+            <div class="embed-fallback" data-steam-url="https://store.steampowered.com/app/4037900/">
+              <p class="muted">Embed not available. Open the store page directly.</p>
+              <a class="btn secondary" href="https://store.steampowered.com/app/4037900/" target="_blank" rel="noopener">
+                Open on Steam
+              </a>
+            </div>
+          </div>
+
+          <div class="under-embed">
+            <p class="muted">
+              A lightweight focus companion to help you stay on track. <b>Free</b> to download.
+            </p>
+
+            <div class="row">
+              <a class="btn secondary" href="/yourfocus/">Learn more</a>
+              <a class="btn secondary" href="https://store.steampowered.com/app/4037900/" target="_blank" rel="noopener">
+                Get it on Steam
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- COMING SOON -->
+        <article class="card project coming">
+          <div class="project-head">
+            <h3>More projects</h3>
+            <span class="badge">Soon</span>
+          </div>
+
+          <p class="muted">
+            I’ll add more apps and experiments here over time.
+          </p>
+
+          <div class="row">
+            <a class="btn secondary" href="https://discord.gg/3DZfVWExDD" target="_blank" rel="noopener">Follow updates on Discord</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- LEGAL -->
+    <section id="legal">
+      <div class="section-head">
+        <h2>Legal</h2>
+        <p>Germany: small imprint + privacy note.</p>
+      </div>
+
+      <div class="card pad">
+        <details>
+          <summary>Imprint</summary>
+          <div class="legal">
+            <p><b>Information according to § 5 TMG</b></p>
+            <p>
+              <b>FroglyStudios</b> (private project / label)<br/>
+              Responsible: <b>Annaelle Knight</b><br/>
+              Address: <b>Bahnhofstr. 8d</b><br/>
+              <b>12555 Berlin</b><br/>
+              Germany
+            </p>
+            <p>Contact: <b>froglystudios@gmail.com</b></p>
+            <p class="muted">Note: FroglyStudios is a private non-commercial side-project label. If there is any error contact us and I will directly take actions.</p>
+          </div>
+        </details>
+
+        <div class="divider"></div>
+
+        <details>
+          <summary>Privacy</summary>
+          <div class="legal">
+            <p><b>Controller</b>: <b>Annaelle Knight, Bahnhofstr. 8d, 12555 Berlin, froglystudios@gmail.com</b></p>
+            <p class="muted">
+              Hosting logs may include IP address, time, and user-agent for delivery and security.
+              Embedded Steam widgets and external links (Discord/Steam) may transmit data to those services.
+              If you see any error please contact me so we can fix it.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="brand small-brand">
+          <span class="logo" aria-hidden="true"></span>
+          <span>FroglyStudios</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#work">Projects</a>
+          <a href="/yourfocus/">YourFocus</a>
+          <a href="#legal">Legal</a>
+        </div>
+      </div>
+
+      <p class="tiny muted">© <span id="year"></span> Frogly Studios</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

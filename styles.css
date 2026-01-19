@@ -1,0 +1,264 @@
+:root{
+  --bg: #0b0b0f;
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.66);
+  --line: rgba(255,255,255,0.12);
+  --card: rgba(255,255,255,0.06);
+  --shadow: 0 18px 60px rgba(0,0,0,.45);
+  --radius: 22px;
+  --radius2: 16px;
+  --max: 1120px;
+  --blur: 18px;
+  --accent: #7cf6c6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display", "SF Pro Text",
+               Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background:
+    radial-gradient(1100px 700px at 20% 10%, rgba(124,246,198,0.18), transparent 60%),
+    radial-gradient(900px 600px at 85% 30%, rgba(120,170,255,0.16), transparent 60%),
+    radial-gradient(800px 500px at 60% 90%, rgba(255,120,200,0.12), transparent 60%),
+    var(--bg);
+  overflow-x:hidden;
+}
+
+a{color:inherit; text-decoration:none}
+a:hover{opacity:.92}
+
+.wrap{max-width:var(--max); margin:0 auto; padding:0 22px}
+
+/* Nav */
+.nav{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  background: rgba(10,10,14,0.55);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  height:64px;
+}
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-weight:650; letter-spacing:.2px;
+}
+.brand-name{font-size:15px}
+:root{
+  /* add this */
+  --brand-logo: url("assets/logo.png");
+
+  --bg: #0b0b0f;
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.66);
+  --line: rgba(255,255,255,0.12);
+  --card: rgba(255,255,255,0.06);
+  --shadow: 0 18px 60px rgba(0,0,0,.45);
+  --radius: 22px;
+  --radius2: 16px;
+  --max: 1120px;
+  --blur: 18px;
+  --accent: #7cf6c6;
+}
+
+/* replace your existing .logo with this */
+.logo{
+  width:28px;
+  height:28px;
+  border-radius:10px;
+  background-image: var(--brand-logo);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.nav-links{
+  display:flex; gap:18px; align-items:center;
+  color:var(--muted); font-size:14px;
+}
+.nav-links a{padding:8px 10px; border-radius:999px}
+.nav-links a:hover{background: rgba(255,255,255,0.07); color:var(--text)}
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 14px; border-radius:999px;
+  background: rgba(124,246,198,0.14);
+  border: 1px solid rgba(124,246,198,0.35);
+  color: var(--text);
+  font-size:14px; font-weight:600;
+}
+.btn:hover{background: rgba(124,246,198,0.20)}
+.btn.secondary{
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
+}
+
+/* Cards / sections */
+section{padding:26px 0}
+.card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+.pad{padding:18px}
+
+.hero{padding:70px 0 18px}
+.hero-card{padding:34px}
+.kicker{
+  display:inline-flex; gap:8px; align-items:center;
+  padding:8px 12px; border-radius:999px;
+  background: rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  color:var(--muted);
+  font-size:13px;
+}
+.dot{
+  width:8px; height:8px; border-radius:999px; background: var(--accent);
+  box-shadow: 0 0 20px rgba(124,246,198,.6);
+}
+h1{
+  margin:16px 0 10px;
+  font-size: clamp(36px, 5vw, 54px);
+  line-height:1.02;
+  letter-spacing:-0.02em;
+}
+.sub{
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.55;
+  max-width: 60ch;
+}
+.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+
+.section-head{
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:16px; margin:0 0 14px;
+}
+.section-head h2{
+  margin:0;
+  font-size:22px;
+  letter-spacing:-0.01em;
+}
+.section-head p{margin:0; color:var(--muted); font-size:14px; max-width: 70ch}
+
+.grid-2{display:grid; gap:16px; grid-template-columns: repeat(2, 1fr)}
+.grid-3{display:grid; gap:16px; grid-template-columns: repeat(3, 1fr)}
+
+h3{margin:0 0 10px; font-size:16px}
+.muted{color:var(--muted)}
+.tiny{font-size:12px}
+
+/* About links */
+.link-list{display:flex; flex-direction:column; gap:10px}
+.link-item{
+  padding:12px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.link-item:hover{background: rgba(255,255,255,0.08)}
+
+/* Projects */
+.project{padding:18px}
+.project-head{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  margin-bottom:12px;
+}
+.badge{
+  font-size:12px; color:var(--muted);
+  border:1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  padding:6px 10px; border-radius:999px;
+  white-space:nowrap;
+}
+.row{display:flex; gap:10px; flex-wrap:wrap}
+
+/* Steam embed area */
+.embed{
+  position:relative;
+  border-radius: var(--radius2);
+  overflow:hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.20);
+  min-height: 220px;
+}
+.steam-frame{
+  width:100%;
+  height: 220px; /* Steam widget height */
+  border:0;
+  display:block;
+}
+.embed-fallback{
+  display:none;
+  position:absolute;
+  inset:0;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+/* Under embed */
+.under-embed{
+  margin-top:14px;
+  padding-top:14px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.chips{display:flex; gap:8px; flex-wrap:wrap}
+.chip{
+  font-size:12px;
+  padding:7px 10px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--muted);
+}
+
+/* Legal */
+.divider{
+  height:1px;
+  background: rgba(255,255,255,0.10);
+  margin:14px 0;
+}
+.legal p{margin:10px 0}
+details summary{
+  cursor:pointer;
+  list-style:none;
+  font-weight:650;
+  color: var(--text);
+  outline:none;
+}
+details summary::-webkit-details-marker{display:none}
+
+/* Footer */
+.footer{
+  padding:30px 0 40px;
+  border-top:1px solid var(--line);
+  margin-top: 22px;
+  color: var(--muted);
+}
+.footer-inner{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+.footer-links{display:flex; gap:12px; flex-wrap:wrap}
+.small-brand{opacity:.95}
+
+/* Responsive */
+@media (max-width: 900px){
+  .nav-links{display:none}
+  .grid-2, .grid-3{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column; align-items:flex-start}
+}
