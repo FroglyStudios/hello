@@ -1,156 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="YourFocus by FroglyStudios - A lightweight focus companion designed specifically for gamers. Maintain focus, energy, and reaction time.">
+    <meta name="keywords"
+        content="YourFocus, Your Focus, FroglyStudios, Frogly Studios, Focus Companion, Gaming Productivity, Steam App, Break Reminder, Pomodoro for Gamers, Mac, Windows">
+    <meta name="author" content="FroglyStudios">
+    <meta name="robots" content="index, follow">
 
-  <title>YourFocus — Free Focus App by FroglyStudios</title>
-  <meta name="description" content="YourFocus is a free focus companion by FroglyStudios. Minimal UI. Quick sessions. Stay consistent." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://froglystudios.com/yourfocus/" />
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frogly.fun/yourfocus/">
+    <meta property="og:title" content="YourFocus | The Focus Companion for Gamers">
+    <meta property="og:description"
+        content="A lightweight focus companion designed specifically for gamers by FroglyStudios. Maintain focus and energy with smart break reminders.">
+    <meta property="og:image" content="https://frogly.fun/assets/yourfocus-banner.jpg">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
-  <link rel="apple-touch-icon" href="../assets/logo.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://frogly.fun/yourfocus/">
+    <meta property="twitter:title" content="YourFocus | The Focus Companion for Gamers">
+    <meta property="twitter:description"
+        content="A lightweight focus companion designed specifically for gamers by FroglyStudios. Maintain focus and energy with smart break reminders.">
+    <meta property="twitter:image" content="https://frogly.fun/assets/yourfocus-banner.jpg">
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="YourFocus — FroglyStudios" />
-  <meta property="og:description" content="A free focus companion. Minimal UI. Quick sessions." />
-  <meta property="og:url" content="https://froglystudios.com/yourfocus/" />
-  <meta property="og:image" content="https://froglystudios.com/assets/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <!-- Structured Data / JSON-LD for AI & Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "YourFocus",
+      "operatingSystem": "Windows, macOS",
+      "applicationCategory": "UtilitiesApplication",
+      "author": {
+        "@type": "Organization",
+        "name": "FroglyStudios",
+        "url": "https://frogly.fun/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "A lightweight focus companion designed specifically for gamers. Maintain focus, energy, and reaction time with smart break reminders and micro-exercises.",
+      "url": "https://frogly.fun/yourfocus/",
+      "image": "https://frogly.fun/assets/yourfocus-banner.jpg"
+    }
+    </script>
 
-  <meta name="theme-color" content="#0b0b0f" />
-  <link rel="stylesheet" href="../styles.css" />
+    <title>YourFocus | The Focus Companion for Gamers by FroglyStudios</title>
 
-  <!-- JSON-LD (SoftwareApplication) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "YourFocus",
-    "applicationCategory": "ProductivityApplication",
-    "operatingSystem": "Windows",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FroglyStudios",
-      "url": "https://froglystudios.com/"
-    },
-    "url": "https://froglystudios.com/yourfocus/",
-    "sameAs": "https://store.steampowered.com/app/4037900/"
-  }
-  </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="/" aria-label="FroglyStudios Home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="brand-name">FroglyStudios</span>
-      </a>
 
-      <nav class="nav-links" aria-label="Navigation">
-        <a href="/#about">About</a>
-        <a href="/#work">Projects</a>
-        <a href="/#legal">Legal</a>
-      </nav>
-
-      <a class="btn secondary" href="/#work">Back</a>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <div class="card hero-card">
-        <div class="kicker"><span class="dot"></span> YourFocus • Free</div>
-        <h1>YourFocus</h1>
-        <p class="sub">
-          A lightweight focus companion designed to help you start, stay consistent, and finish.
-          No clutter — just the essentials.
-        </p>
-
-        <div class="actions">
-          <a class="btn" href="https://store.steampowered.com/app/4037900/" target="_blank" rel="noopener">Get on Steam</a>
-          <a class="btn secondary" href="https://discord.gg/3DZfVWExDD" target="_blank" rel="noopener">Discord</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <h2>Steam</h2>
-        <p>Embedded if possible (fallback included).</p>
-      </div>
-
-      <div class="card project">
-        <div class="embed">
-          <iframe
-            class="steam-frame"
-            title="Steam Store Widget — YourFocus"
-            src="https://store.steampowered.com/widget/4037900/"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-          ></iframe>
-
-          <div class="embed-fallback" data-steam-url="https://store.steampowered.com/app/4037900/">
-            <p class="muted">Embed not available. Open the store page directly.</p>
-            <a class="btn secondary" href="https://store.steampowered.com/app/4037900/" target="_blank" rel="noopener">
-              Open on Steam
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="/assets/logo.png" alt="FroglyStudios" style="height: 52px; object-fit: contain;">
             </a>
-          </div>
+            <nav class="nav-links">
+                <a href="/#projects" data-i18n="nav.projects">Apps & Games</a>
+                <a href="/support" data-i18n="nav.support">Support</a>
+                <a href="/discord" data-i18n="nav.discord">Discord</a>
+                <a href="#" id="lang-toggle" aria-label="Toggle Language"
+                    style="font-size: 1.2rem; margin-left: 1rem;"><i class="fa-solid fa-globe" id="lang-icon"></i></a>
+            </nav>
         </div>
+    </header>
 
-        <div class="under-embed">
-          <div class="chips">
-            <span class="chip">Free</span>
-            <span class="chip">Minimal UI</span>
-            <span class="chip">Focus-first</span>
-          </div>
+    <main class="container fade-in" style="padding-top: 8rem; padding-bottom: 5rem;">
+        <div
+            style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2rem; max-width: 800px; margin: 0 auto;">
 
-          <p class="muted" style="margin-top:10px;">
-            Built for quick sessions and a clean routine.
-            Start a focus block, do the work, and move on — without distractions.
-          </p>
-
-          <div class="grid-2" style="margin-top:14px;">
-            <div class="mini card pad" style="box-shadow:none;">
-              <h3>What it does</h3>
-              <ul class="muted tiny" style="margin:0; padding-left:18px;">
-                <li>Simple focus sessions</li>
-                <li>Quick controls</li>
-                <li>Lightweight and fast</li>
-              </ul>
+            <img src="/assets/yourfocus-banner.jpg" alt="YourFocus Banner"
+                style="width: 100%; max-width: 600px; border-radius: var(--radius-sm); margin-bottom: -1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+            <h1>YourFocus</h1>
+            <div class="project-tags" style="justify-content: center;">
+                <span class="tag tag-accent"><i class="fa-solid fa-tag"></i> <span
+                        data-i18n="tag.free">FREE</span></span>
+                <span class="tag"><i class="fa-solid fa-wrench"></i> <span data-i18n="tag.utility">Utility</span></span>
+                <span class="tag"><i class="fa-brands fa-windows"></i></span>
+                <span class="tag"><i class="fa-brands fa-apple"></i></span>
             </div>
 
-            <div class="mini card pad" style="box-shadow:none;">
-              <h3>Why it exists</h3>
-              <p class="muted tiny" style="margin:0;">
-                I wanted a focus tool that doesn’t feel like a dashboard.
-                Just start, focus, done.
-              </p>
+            <p data-i18n="projects.yourfocus.desc" style="font-size: 1.25rem;">A lightweight focus companion designed
+                specifically for gamers. Maintain focus, energy, and reaction time with smart break reminders and
+                micro-exercises.</p>
+
+            <div
+                style="width: 100%; max-width: 646px; margin: 2rem 0; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
+                <iframe src="https://store.steampowered.com/widget/4037900/" frameborder="0" width="100%" height="190"
+                    style="display: block;"></iframe>
             </div>
-          </div>
 
-          <div class="row" style="margin-top:14px;">
-            <a class="btn secondary" href="/#work">Back to projects</a>
-            <a class="btn secondary" href="mailto:froglystudios@gmail.com">Contact</a>
-          </div>
+            <div style="display: flex; gap: 1rem;">
+                <a href="https://store.steampowered.com/app/4037900" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary"><i class="fa-brands fa-steam"></i> <span data-i18n="projects.btn.steam">Get
+                        it on Steam</span></a>
+                <a href="/" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> <span
+                        data-i18n="btn.back">Back to Home</span></a>
+            </div>
         </div>
-      </div>
-    </section>
+    </main>
 
-    <footer class="footer">
-      <p class="tiny muted">© <span id="year"></span> FroglyStudios</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content fade-in">
+            <div class="logo" style="font-size: 1.2rem;">
+                <img src="/assets/logo.png" alt="FroglyStudios" style="height: 36px; object-fit: contain;">
+            </div>
+            <div class="copyright">
+                &copy; 2026 FroglyStudios. <span data-i18n="footer.rights">All rights reserved.</span>
+            </div>
+        </div>
     </footer>
-  </main>
 
-  <script src="../script.js"></script>
+    <script src="/js/i18n.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
